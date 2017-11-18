@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script charset='UTF-8'>
+		var sayhello = prompt('인사를 합시다','인사');
+		var hihi = sayhello.indexOf('안녕');
+		if (hihi>=0) {
+			alert('안녕하세요');
+		}
+		var goodnight = sayhello.indexOf('잘자');
+		if (goodnight>=0) {
+			alert('안녕히 주무세요');
+		}
+		var goodnight = sayhello.indexOf('잘 자');
+		if (goodnight>=0) {
+			alert('안녕히 주무세요');
+		}
+		if(hihi<0 && goodnight<0) {
+			alert('인사도 안하냐?');
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
